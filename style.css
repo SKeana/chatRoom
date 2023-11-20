@@ -1,0 +1,54 @@
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.chat-column {
+    flex: 1;
+    margin-right: 20px;
+}
+h1 {
+    color: #9a0000;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 2%;
+    align-self: left;
+    align-self: top;
+}
+#group-user h2 {
+    color: #007BFF; 
+}
+.input-container {
+    display: flex;
+    align-self: flex-end;
+    margin-top: 8px;
+}
+.chat-messages {
+    max-height: 300px;
+    overflow-y: auto;
+}
+#messageInput {
+    flex: 1;
+    margin-right: 10%;
+    margin-left: 10%;
+    
+}
+.message {
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.user {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: left;
+    align-self: flex-end; /* Align user messages to the right */
+}
+
+.reply {
+    background-color: #28A745;
+    color: #fff;
+    text-align: right;
+    align-self: flex-start; /* Align reply messages to the left */
+}
