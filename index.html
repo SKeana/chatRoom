@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat Room</title>
-    ,<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <div id="app">
-            <h1>Let's Chat</h1>
-            <div id="chat-contariner">
-                <div id="chat-message"></div>
-                <input tpye="text" id="itemInput" placeholder="Type your message">
-                <button onclick="sendMessage()">Send Message</button>
+    <div id="app">
+        <h1>Group's</h1>
+            <div class="chat-column" id="group-user">
+                <h2>Ok</h2>
+                <div class="chat-messages" id="chat-message"></div>
+                <div class="input-container">
+                    <input type="text" id="messageInput" placeholder="Type your message">
+                    <button onclick="sendMessage()">Send Message</button>
             </div>
-        </div>
-        <script src="chatLogic.js"></script>
+    </div>
+    <script src="chatLogic.js"></script>
 </body>
 </html>
