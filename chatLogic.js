@@ -1,13 +1,19 @@
 function sendMessage() {
-    var mesageInput = document.getElementById('messageinput');
-    var chatMessage = document.getElementById('chatMessage');
+    var messageInput = document.getElementById('messageInput');
+    var chatMessage = document.getElementById('chat-message');
 
-    if (mesageInput.value.trim() !== "") {
-        var mesage = document.createElement('div');
-        mesage.className = 'Message';
-        mesage.textContent = 'You:' + mesageInput.value;
+    if (messageInput.value.trim() !== "") {
+        var userMessage = document.createElement('div');
+        userMessage.className = 'message user';
+        userMessage.textContent = messageInput.value;
+        chatMessage.appendChild(userMessage);
 
-        mesageInput.value = '';
+        var replyMessage = document.createElement('div');
+        replyMessage.className = 'message reply';
+        replyMessage.textContent = 'ok';
+        chatMessage.appendChild(replyMessage); 
+
+        messageInput.value = '';
 
     }
 }
